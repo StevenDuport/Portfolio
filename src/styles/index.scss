@@ -3,7 +3,10 @@
 
 body {
   font-family: sans-serif;
-  background-color: #120d16;
+  background-color: #211828;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #a06db9, #211828), repeating-radial-gradient(circle at center center, #a06db9, #a06db9, 23px, transparent 46px, transparent 23px);
+  background-blend-mode: multiply;
   overflow: hidden;
 }
 
