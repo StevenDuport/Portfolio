@@ -124,8 +124,8 @@
 
   .photos{
     padding-bottom: 8em;
-width: 100%;
-height: 94%;
+    width: 100%;
+    height: 100%;
   }
 
   .photos_button-flex{
@@ -138,5 +138,11 @@ height: 94%;
     top: 93% ;
     animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 1.5s;
+  }
+
+  .photoAlbum{
+margin: 0 1em;
+    height: 600px;
+    overflow: scroll;
   }
 }
