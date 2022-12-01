@@ -18,7 +18,7 @@
   border: 2px solid #0f0e17;
 }
 
-.eye:after { /*pupil*/
+.eye:after { 
   position: absolute;
   bottom: 17px;
   right: 10px;
@@ -183,14 +183,20 @@
 }
 
 .about_list-item{
-  position: absolute;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-weight: bold;
   font-size: 1.5em;
-  bottom: 2.4em;
-  left: 6.4em;
+  background-color: #ff8906;
+  padding: 0.1em;
+  border-radius: 10px; 
+  border: 2px solid #0f0e17;
+  box-shadow: 4px 4px 0px 0px #2b2b2b;
+  font-size: 1.5em;
   z-index: -1;
   transition: all 0.2s;
   animation-delay: 1.8s;
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 
@@ -204,34 +210,42 @@
   border-radius: 10px; 
   border: 2px solid #0f0e17;
   box-shadow: 4px 4px 0px 0px #2b2b2b;
+  transition: all 0.2s;
 }
 
-.about_list-item-cliked:nth-child(1){
+.about_list-item:nth-child(1){
   transition: all 0.3s;
+  transform: translate(6em, 6em);
 }
 
-.about_list-item-cliked:nth-child(2){
+.about_list-item:nth-child(2){
   transition: all 0.3s;
+  transform: translate(3em, 6em);
 }
 
-.about_list-item-cliked:nth-child(3){
+.about_list-item:nth-child(3){
   transition: all 0.3s;
+  transform: translate(-2.1em, 7em);
 }
 
-.about_list-item-cliked:nth-child(4){
+.about_list-item:nth-child(4){
   transition: all 0.3s;
+  transform: translate(-6em, 7em);
 }
 
-.about_list-item-cliked:nth-child(5){
+.about_list-item:nth-child(5){
   transition: all 0.3s;
+  transform: translate(6em, 6em);
 }
 
-.about_list-item-cliked:nth-child(6){
+.about_list-item:nth-child(6){
   transition: all 0.3s;
+  transform: translate(0.2em, 5em);
 }
 
-.about_list-item-cliked:nth-child(7){
+.about_list-item:nth-child(7){
   transition: all 0.3s;
+  transform: translate(-5em, 6em);
 }
 
 
@@ -271,9 +285,17 @@
 
 .about_arrow-text{
   position: relative;
-  top: -10.3em;
-  left: 20.5em;
+  top: 2.2em;
+  left: 19em;
   font-family: 'Patrick Hand', cursive;
+}
+
+.about_arrow{
+  width: 2em;
+  transform: rotate(170deg);
+  position: relative;
+  top: 1.5em;
+  left: 17em;
 }
 
 .about_arrow-text--clicked{
@@ -284,13 +306,6 @@
   display: none;
 }
 
-.about_arrow{
-  width: 2em;
-  transform: rotate(170deg);
-  position: relative;
-  top: -11em;
-  left: 18.3em;
-}
 
 .about_title-techno {
   font-size: 4em;
@@ -304,46 +319,66 @@
 }
 
 @media screen and (min-width: 430px){
-  .about_text-item:nth-child(2){
-    width: 65%;
-    top: 5.7em;
-  }
-
-  .about_list-item{
-    // font-family: 'Patrick Hand', cursive;
-    position: absolute;
-    font-size: 1.5em;
-    bottom: 2.4em;
-    left: 8.4em;
-    z-index: -1;
-    transition: all 0.2s;
+  .about_list-item:nth-child(1){
+    transition: all 0.3s;
+    transform: translate(7em, 6em);
   }
   
-  .about_list-item-cliked{
-    position: absolute;
-    font-size: 1.5em;
-    bottom: 2.4em;
-    left: 8.4em;
-    background-color: #ff8906;
-    padding: 0.1em;
-    color: white;
-    border-radius: 10px;
-    
+  .about_list-item:nth-child(2){
+    transition: all 0.3s;
+    transform: translate(3em, 6em);
+  }
+  
+  .about_list-item:nth-child(3){
+    transition: all 0.3s;
+    transform: translate(-0.3em, 7em);
+  }
+  
+  .about_list-item:nth-child(4){
+    transition: all 0.3s;
+    transform: translate(-4em, 7em);
+  }
+  
+  .about_list-item:nth-child(5){
+    transition: all 0.3s;
+    transform: translate(-7em, 6em);
+  }
+  
+  .about_list-item:nth-child(6){
+    transition: all 0.3s;
+    transform: translate(4.5em, 6em);
+  }
+  
+  .about_list-item:nth-child(7){
+    transition: all 0.3s;
+    transform: translate(-5em, 6em);
   }
 
   .about_arrow-text{
     position: relative;
-    top: -14.2em;
-    left: 6.8em;
+    top: 2.2em;
+    left: 21.4em;
     font-family: 'Patrick Hand', cursive;
   }
   
   .about_arrow{
     width: 2em;
-    transform: rotate(20deg);
+    transform: rotate(170deg);
     position: relative;
-    top: -15.3em;
-    left: 8.8em;
+    top: 1.5em;
+    left: 19em;
+  }
+
+  .about_skills{
+    margin-top: 1em;
+    height: 400px;
+    position: relative;
+  }
+
+  .about_button{
+    left: 0;
+    right: 0;
+    bottom: 0em;
   }
 }
 
