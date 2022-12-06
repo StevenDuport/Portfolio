@@ -84,6 +84,7 @@ function Photos () {
   ];
 
   const [zoom, setZoom] = useState(2);
+  const [clicked, setClicked] = useState(false);
 
   return(
     <div className="photos">
@@ -108,8 +109,8 @@ function Photos () {
       </div>
       <p className="photo_resume">Un petit aperçu de mon univers et de mes illustrations. </p>
       <div className="photos_button-flex">
-        <button className="photos_button photos_button-square" onClick={() => setZoom(1)}><Square size={30} strokeWidth={3}/></button>
-        <button className="photos_button photos_button-column" onClick={() => setZoom(2)}><Columns size={30} strokeWidth={3}/></button>
+        <button className={clicked? " photos_button photos_button-square--clicked " : "photos_button photos_button-square"} onClick={() => {setZoom(1), setClicked(!clicked)}}><Square size={30} strokeWidth={3}/></button>
+        <button className={clicked? "  photos_button photos_button-column--clicked " : "photos_button photos_button-column"} onClick={() => {setZoom(2), setClicked(!clicked)}}><Columns size={30} strokeWidth={3}/></button>
       </div>
     </div>
   );
