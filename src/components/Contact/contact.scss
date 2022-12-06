@@ -1,7 +1,6 @@
 .contact{
   background-color: #FEF9EF;
   position: relative;
-  width: 100%;
   animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   width: 100%;
   height: 100%;
@@ -91,7 +90,7 @@
   transform: rotate(315deg);
 }
 
-.thick-arrow-righte {
+.thick-arrow-validate {
   width: 35px;
   height: 55px;
   border: 10px solid rgb(54, 148, 70);
@@ -103,8 +102,7 @@
 
 .section_color-red{
   background-color: #FE6D73;
-  border-left: 8px solid black;
-  border-bottom: 4px solid black;
+  border: 4px solid black;
   grid-column: 2 / 8;
   grid-row: 1 / 2;
   font-size: 4em;
@@ -158,6 +156,13 @@
   padding-top: 0.7em;
 }
 
+.section_color-back{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border: 4px solid black;
+
+}
+
 .section_color-blue--link{
   color: rgb(5, 18, 61);
   display: flex;
@@ -168,7 +173,7 @@
   width: 3em;
   height: 3em;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
- background-color: #FEF9EF;;
+  background-color: #FEF9EF;;
 
     &:hover{
       animation: jello-vertical 0.9s both;
@@ -187,7 +192,36 @@
 
 @media screen and (max-width: 430px){
   .contact{
-    padding-bottom: 6em;
+    padding-bottom: 5em;
+  }
+
+  .section_color-blue{
+    border: 4px solid black;
+    background-color: #227C9D;
+    grid-column: 1 / 8;
+    grid-row: 10 / 11;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+
+  button{
+    margin: 0;
+    appearance: none;
+  }
+
+  textarea,
+  input.text,
+  input[type="text"],
+  input[type="email"],
+  input[type="button"],
+  input[type="submit"],
+  .input-checkbox {
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
   }
 }
 

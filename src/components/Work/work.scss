@@ -86,7 +86,6 @@
 }
 
 
-
 .work_article-title{
   color: #272343;
   font-size: 2em;
@@ -110,9 +109,16 @@
 }
 
 .work_article-link{
+  // font-family: Patrick Hand,cursive;
+  // font-weight: bold;
+  // text-transform: uppercase;
   color: #272343;
   margin-left: 0.8em;
+  margin-bottom: 0.2em;
   font-size: 1.2em;
+  text-decoration: underline;
+  display: flex;
+  gap: 5px;
 }
 
 .work_article-techno{
@@ -126,8 +132,6 @@
   display: inline;
   margin-right: 1em;
 }
-
-
 
 @keyframes fall {
   100%{
@@ -187,6 +191,7 @@
             animation-timing-function: ease-out;
   }
 }
+
 @keyframes bounce-in-bottom {
   0% {
     -webkit-transform: translateY(500px);

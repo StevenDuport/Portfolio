@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import handBack from '../../assets/handBack.png';
-import matchJob1 from '../../assets/matchJob1.jpg';
-import meteo from '../../assets/ApiMeteo.jpg';
-import pfc from '../../assets/PFC.jpg';
-import portfolio from '../../assets/portfolio.jpg';
+import { GitHub, Globe} from 'react-feather';
 
 import { data } from '../../data';
 import './work.scss';
@@ -42,8 +39,8 @@ function Work () {
           <p className="work_article-description">
             {item.description}
           </p>
-          {item.link && <a href={item.link} className="work_article-link" target="_blank">Découvrir le site</a>}
-          <a href={item.gitHub} className="work_article-link" target="_blank">GitHub</a>
+          {item.link && <a href={item.link} className="work_article-link" target="_blank"><Globe size={15} strokeWidth={3}/><p>Découvrir le site</p></a>}
+          <a href={item.gitHub} className="work_article-link" target="_blank"><GitHub size={15} strokeWidth={3}/><p>GitHub</p></a>
         </article>
       ))}
       </div>

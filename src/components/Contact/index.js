@@ -66,7 +66,7 @@ function Contact()  {
           required
         />
         <button className="contact_form-button" type="submit" value="Send">
-          <div className= {sendMail ? 'thick-arrow-righte' : 'thick-arrow-right'}></div>
+          <div className= {sendMail ? 'thick-arrow-validate' : 'thick-arrow-right'}></div>
         </button>
         <div className="section_color section_color-red">
           <p>
@@ -80,6 +80,7 @@ function Contact()  {
           </p>
         </div>
         <div className="section_color section_color-green"></div>
+        <div className="section_color section_color-back"></div>
         <div className="section_color section_color-blue"> <a href='https://www.linkedin.com/in/steven-duport/' className="section_color-blue--link" target="_blank"><Linkedin/></a></div>
       </form>
     </div>

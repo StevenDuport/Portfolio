@@ -266,6 +266,7 @@
 
 .about_head{
   width: 250px;
+  position: relative;
 }
 
 .about_head-top{
@@ -277,8 +278,9 @@
 .about_head-cliked{
   width: 250px;
   transform: rotate(-180deg);
-  left: -8.1em;
-  top: 3.94em;
+  margin-top: 52px;
+  margin-right: 100px;
+  right: 15px;
   transition: all 0.2s;
   position: absolute;
 }
@@ -405,6 +407,7 @@
 
   }
 }
+
 @keyframes scale-in-center {
   0% {
     transform: scale(0);
