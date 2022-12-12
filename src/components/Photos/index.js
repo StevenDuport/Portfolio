@@ -85,7 +85,19 @@ function Photos () {
 
   const [zoom, setZoom] = useState(2);
   const [clicked, setClicked] = useState(false);
+  const [clicked2, setClicked2] = useState(true);
 
+  function witchZoom (number) {
+    if (number > 1){
+      setClicked2(true);
+      setClicked(false);
+    }
+    if (number < 2){
+      setClicked(true);
+      setClicked2(false);
+    }
+  }
+ 
   return(
     <div className="photos">
       <Link to="/" className="about_back">
@@ -109,8 +121,8 @@ function Photos () {
       </div>
       <p className="photo_resume">Un petit aperçu de mon univers et de mes illustrations. </p>
       <div className="photos_button-flex">
-        <button className={clicked? " photos_button photos_button-square--clicked " : "photos_button photos_button-square"} onClick={() => {setZoom(1), setClicked(!clicked)}}><Square size={30} strokeWidth={3}/></button>
-        <button className={clicked? "  photos_button photos_button-column--clicked " : "photos_button photos_button-column"} onClick={() => {setZoom(2), setClicked(!clicked)}}><Columns size={30} strokeWidth={3}/></button>
+        <button className={clicked? " photos_button photos_button-square--clicked " : "photos_button photos_button-square"} onClick={() => {setZoom(1), witchZoom(1)}}><Square size={30} strokeWidth={3}/></button>
+        <button className={clicked2? "  photos_button photos_button-column " : "photos_button photos_button-column--clicked"} onClick={() => {setZoom(2),witchZoom(2)}}><Columns size={30} strokeWidth={3}/></button>
       </div>
     </div>
   );
